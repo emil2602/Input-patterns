@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First lecture</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="name">ФИО</label>
+            <input type="text" id="name" required pattern="^[A-Za-zА-Яа-яЁё][A-Za-zА-Яа-яЁё\s]{5,25}$" title="Field must contain 5-25 latin or cyrillic characters">
+        </div>
+        <div>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        </div>
+        <div>
+            <label for="email">Почта</label>
+            <input type="email" id="email" required pattern="^[\D+]{3,}@[\D+]{3,}.[\D+]{2,}$">
+        </div>
+        <input type="submit" value="Отправить">
+    </form>
+    <section>
+        <h2><span>L</span>orem ipsum dolor sit ame<span>t</span></h2>
+        <img src="./img/nature.jpg" alt="Nature" width="400" height="500">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil explicabo obcaecati architecto qui magni quis ducimus porro fugiat nisi, sit nostrum quibusdam sint maxime dignissimos impedit voluptas deleniti? Velit, quidem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempore alias, voluptatem aliquam rerum iusto ipsam? Ducimus expedita, possimus hic beatae sunt cumque facilis nesciunt nulla suscipit voluptatibus modi laborum?</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Quo, laborum harum?</b> Inventore repudiandae expedita officia quasi libero, delectus veniam, voluptate doloremque recusandae ipsum, porro quia? Et necessitatibus animi iste nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, laborum harum? Inventore repudiandae expedita officia quasi libero, delectus veniam, voluptate doloremque recusandae ipsum, porro quia? Et necessitatibus animi iste nobis!</p>
+    </section>
+</body>
+</html>
